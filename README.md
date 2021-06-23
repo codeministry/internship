@@ -43,9 +43,11 @@ https://getbootstrap.com/docs/5.0/getting-started/introduction/
 
 ##### Docker
 
-Install docker via brew
+Install docker via installer
+https://docs.docker.com/docker-for-mac/install/
+
+Install docker-compose via brew
 ```
-brew install docker
 brew install docker-compose
 ```
 

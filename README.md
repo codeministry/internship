@@ -45,7 +45,8 @@ https://getbootstrap.com/docs/5.0/getting-started/introduction/
 
 Install docker via brew
 ```
-brew cask install docker
+brew install docker
+brew install docker-compose
 ```
 
 ##### Javascript & Co.

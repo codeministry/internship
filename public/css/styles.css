@@ -4,6 +4,10 @@ html, body {
 
 }
 
+table#weather td:first-child {
+    font-weight: bold;
+}
+
 .size-400 {
     width: 400px;
 }

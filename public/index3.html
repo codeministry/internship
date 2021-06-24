@@ -1,9 +1,6 @@
 <html lang="de">
 
 <head>
-        function showAlert() {
-            console.log("Hallo Welt!");
-        }
     <link rel="stylesheet" href="css/styles.css">
     <title>site three</title>
 </head>
@@ -15,7 +12,7 @@
                 <label class="h2" form="person">Namenseingabe</label>
                 <label for="vorname">Vorname</label>
                 <input type="text" name="vorname" id="vornahme" maxlength="30">
-                 
+
                 <label for="zuname">Zuname</label>
                 <input type="text" name="zuname" id="zuname" maxlength="40">
 
@@ -44,13 +41,13 @@
                 <fieldset>
                     <legend>Geschlecht</legend>
 
-                    <label for="m&aumlnnl">
-                        <input type="radio" name="geschlecht" id="m&aumlnnl" value="m&aumlnnl">
+                    <label for="male">
+                        <input type="radio" name="gender" id="male" value="male">
                         m&aumlnnlich
                     </label>
 
-                    <label for="weibl">
-                        <input type="radio" name="geschlecht" id="weibl" value="weibl">
+                    <label for="female">
+                        <input type="radio" name="gender" id="female" value="female">
                         weiblich
                     </label>
 
@@ -68,20 +65,21 @@
                     <input id="zname" name="zname">
                 </label>
 
-                <label for="m&auml;nnl">m&auml;nnlich</label>
-                <input type="radio" id="m&auml;nnl" name="geschlecht" value="0">
+                <label for="male">m&auml;nnlich</label>
+                <input type="radio" id="male" name="gender" value="0">
                 <label for="weibl">weiblich</label>
-                <input type="radio" id="weibl" name="geschlecht" value="1">
+                <input type="radio" id="female" name="gender" value="1">
                 <label for="queer">queer</label>
-                <input type="radio" id="queer" name="geschlecht" value="2">
+                <input type="radio" id="queer" name="gender" value="2">
 
-                <label for="alter">&uuml;ber 18:</label>
-                <input type="checkbox" id="alter" name="alter">
+                <label for="age">&uuml;ber 18:</label>
+                <input type="checkbox" id="age" name="age">
 
-                <input type="submit" value="senden"><nowiki>
+                <input type="submit" value="send">
+                <nowiki>
 
                     <div>
-                <button type="reset">Eingaben zur&uuml;cksetzen</button>
+                        <button type="reset">Eingaben zur&uuml;cksetzen</button>
                     </div>
             </form>
         </div>
@@ -91,21 +89,21 @@
             <form>
                 <label for="vorname">Vorname</label>
                 <input id="vorname">
-    
+
                 <label for="zuname">Zuname</label>
                 <input id="zuname">
-    
+
                 <button type="reset">Eingaben zur&uuml;cksetzen</button>
                 <button type="submit">Eingaben absenden</button>
-            </form> 
+            </form>
         </div>
         <hr>
         <hr>
         <div>
             <form action="select.html">
                 <label>K&uumlnstler(in):
-                    <select name="top5" size=4>
-                        <option>Michael Jackson</option>
+                    <select name="artists" size=4>
+                        <option value="Michael Jackson">Michael Jackson</option>
                         <option>Tom Waits</option>
                         <option>Nina Hagen</option>
                         <option>Marianne Rosenberg</option>
@@ -119,13 +117,13 @@
             <h1>Schreiben Sie eine Geschichte</h1>
             <p>Hier der Anfang der Geschichte</p>
             <textarea cols="50" rows="10">Es war dunkel, feucht und nebelig...</textarea>
-        </div> 
+        </div>
         <div>
             <a href="index.html">Hier geht es zu site one</a>
-        </div> 
+        </div>
         <div>
             <a href="index2.html">Hier geht es zu site two</a>
-        </div> 
+        </div>
 
     </div>
 </body>

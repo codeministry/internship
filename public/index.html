@@ -1,14 +1,16 @@
 <html lang="de">
 
 <head>
+    <script>
         function showAlert() {
             console.log("Hallo Welt!");
         }
+    </script>
     <link rel="stylesheet" href="css/styles.css">
     <title>site one</title>
 </head>
-
-<body>
+    
+<body>    
     <div>
         <div>
             <h1>
@@ -80,7 +82,7 @@
             <p>
                 <code>das hier ist der code</code>
             </p>
-            <video src="videos/demofilm.mp4" controls></video>
+            <video class="size-400" src="videos/demofilm.mp4" controls></video>
             <p>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             </p>
@@ -118,6 +120,10 @@
         <div>
             <a href="index3.html">Hier geht es zu site three</a>
         </div>
+        <div>
+            <img class="size-200" alt="Montag" title="Montag" src="images/monday.png" onclick="showAlert();" />
+        </div>
+    </div>
 </body>
 
 </html>

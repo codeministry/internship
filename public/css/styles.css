@@ -1,11 +1,14 @@
 html, body {
     font-family:Helvetica, sans-serif;
+    margin: 20px;
+
 }
 
-img.size-400 {
+.size-400 {
     width: 400px;
 }
 
-img.size-200 {
+.size-200 {
     width: 200px;
+    border: 1px solid #EEEEEE;
 }

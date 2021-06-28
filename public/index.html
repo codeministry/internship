@@ -1,130 +1,91 @@
-<html lang="de">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <script>
-        function showAlert() {
-            console.log("Hallo Welt!");
-        }
-    </script>
-    <link rel="stylesheet" href="css/styles.css">
-    <title>site one</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Do not remove this-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Bootstrap Test Page</title>
 </head>
 
 <body>
-    <div>
-        <div>
-            <h1>
-                das <span>ist </span>die <span> seitenueberschrift</span>
-            </h1>
-            <h2>
-                das ist die unterueberschrift
-            </h2>
-            <h3>
-                das ist die unterunterueberschrift
-            </h3>
-            <h4>
-                das ist die unterunterunterueberschrift
-            </h4>
-            <h5>
-                das ist die unterunterunterunterueberschrift
-            </h5>
-            <h6>
-                das ist die unterunterunterunterunterueberschrift
-            </h6>
-            <div>
-                <img class="size-200" alt="Montag" title="Montag" src="images/monday.png" onclick="showAlert();" />
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Hallo Welt</h1>
+                <h2>Und besonders alle Interessent&lowast;innen</h2>
+                <p>MIt diesem Formular werden sie ein Teil der wilden F&uuml;chse Religion</p>
             </div>
-            <p>
-                <b>Das Wetter ist besonders miserabel</b>
-            </p>
-            <img class="size-200" src="images/tuesday.png" />
-            <p>
-                <em><kbd>Das Wetter ist ausnahmsweise gut</kbd></em>
-            </p>
-            <img class="size-200" src="images/wednesday.png" />
-            <p>
-                <i><mark>Heute ist das Wetter wieder absolut nicht gut</mark></i>
-            </p>
-            <p>
-                <s>Lorem ipsum dolor sit amet, consetetur sadipscing</s>
-            </p>
-            <p>
-                <small>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                    ut
-                </small>
-            </p>
-            <p>
-                <strong>Lorem ipsum dolor sit amet, consetetur</strong>
-            </p>
-            <p>
-                H<sub>2</sub>O
-                <br>
-                2<sup>10</sup> = 1024
-            </p>
-            <p>
-                <u>Lorem ipsum dolor sit</u>
-            </p>
-            <p>
-                <cite></cite>
-            </p>
-            <p>
-                <q>Lorem ipsum dolor</q>
-            </p>
-            <p>
-                lorem ipsum<dfn>dolor sit</dfn>conseteteur
-            </p>
-            <p>
-                <abbr title="super cool">spc</abbr>
-                <br> super cool
-            </p>
-            <p>
-            <h2>das ist die unterueberschrift</h2>
-            </p>
-            <p>
-                <code>das hier ist der code</code>
-            </p>
-            <video class="size-400" src="videos/demofilm.mp4" controls></video>
-            <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            </p>
-            <blockquote>
-                <p>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                    et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                </p>
-            </blockquote>
-            <ol>
-                <li>Lorem ipsum dolor sit amet,</li>
-                <li>Lorem ipsum dolor sit amet, consetetur</li>
-                <li>Lorem ipsum dolor sit</li>
-            </ol>
-            <ul>
-                <li>Lorem ipsum dolor sit amet, consetetur</li>
-                <li>Lorem ipsum dolor sit amet,</li>
-                <li>Lorem ipsum dolor sit</li>
-            </ul>
-            <p>
-                Lorem ipsum dolor sit
-            </p>
-            <hr>
-            <p>
-                Lorem ipsum dolor sit amet, consetetur
-            </p>
         </div>
-        <div>
-            <a href="https://wiki.selfhtml.org/wiki/HTML/Elemente/a" target="_blank">Hier geht's zu selfhtml</a>
-        </div>
-        <div>
-            <a href="index2.html">Hier geht es zu site two</a>
-        </div>
-        <div>
-            <a href="index3.html">Hier geht es zu site three</a>
-        </div>
-        <div>
-            <img class="size-200" alt="Montag" title="Montag" src="images/monday.png" onclick="showAlert();" />
-        </div>
+        <div class="row">
+            <div class="col-4">
+                <p>Lorem Consequat fugiat elit voluptate consequat dolor consectetur magna consequat nisi ut labore irure culpa ipsum</p>
+            </div>
+            <div class="col-4">
+                <p>Lorem Consequat fugiat elit voluptate consequat dolor consectetur magna consequat nisi ut labore irure culpa ipsum</p>
+            </div>
+            <div class="col-4">
+                <p>Lorem Consequat fugiat elit voluptate consequat dolor consectetur magna consequat nisi ut labore irure culpa ipsum</p>
+            </div>
+           <hr>
+           <hr>
+           <hr>
+        </div> 
+        </div>   
+    <div class="container"> 
+        <form class="row g-2" action="bootstrap2.html">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Bsp.: maxmustermann&commat;web.de">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Passwort</label>
+                <input type="password" class="form-control" id="inputAddress4">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Adresse</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Bsp.: Kapellenweg 5">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">Stadt</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">Land</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Wählen sie aus</option>
+                    <option>Deutschland</option>
+                    <option>Italien</option>
+                    <option>Frankreich</option>
+                    <option>Schweiz</option>
+                    <option>andere</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Postleitzahl</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                     Ich akzeptiere die Datenschutzerklärung 
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Anmelden</button>
+            </div>
+        </form>
+    </div>          
     </div>
+
+    <!-- Do not remove this-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

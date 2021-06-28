@@ -37,8 +37,9 @@ textarea
 
 - What is bootstrap and why you need it?
 - Read & check "Get started" from 
-https://getbootstrap.com/docs/5.0/getting-started/introduction/
-
+https://getbootstrap.com/docs/5.0/getting-started/introduction
+https://getbootstrap.com/docs/5.0/components
+https://getbootstrap.com/docs/5.0/layout
 - Create a new HTML page including the necessary bootstrap CSS & JS libraries.
 
 ##### Docker

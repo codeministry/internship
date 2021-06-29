@@ -53,6 +53,84 @@
                     </div>
                   </nav>
             </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1><u>Hallo Welt</u></h1>
+                        <h3>Das ist die Startseite</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">     
+                      <p> Von dieser Seite aus, können sie alle Dokumente erreichen</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <form action="result.html" method="GET">
+                <div class="container"> 
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                   placeholder="Bsp.: maxmustermann&commat;web.de">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="password" class="form-label">Passwort</label>
+                            <input type="password" class="form-control" id="password" name="password">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="address" class="form-label">Adresse</label>
+                            <input type="text" class="form-control" id="address" name="address" placeholder="Bsp.: Kapellenweg 5">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <label for="zip" class="form-label">Postleitzahl</label>
+                            <input type="text" class="form-control" id="zip" name="zip">
+                        </div>
+                        <div class="col-md-7">
+                            <label for="city" class="form-label">Stadt</label>
+                            <input type="text" class="form-control" id="city" name="city">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="state" class="form-label">Land</label>
+                            <select id="state" name="state" class="form-select">
+                                <option selected>Wählen sie aus</option>
+                                <option>Deutschland</option>
+                                <option>Italien</option>
+                                <option>Frankreich</option>
+                                <option>Schweiz</option>
+                                <option>andere...</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck" name="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Ich akzeptiere die Datenschutzerklärung
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Anmelden</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+
+
+
+
+
+
         </div>
      </div>
 </body>
@@ -61,5 +139,4 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 </body>
-
 </html>

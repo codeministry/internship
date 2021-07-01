@@ -1,164 +1,226 @@
 <html lang="de">
 
 <head>
-    <link rel="stylesheet" href="css/styles.css">
-    <title>site two</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Do not remove this-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Bootstrap Test Page</title>
 </head>
 
 <body>
-    <div>
-        <h1>
-            Site 2
-        </h1>
-    </div>
     <div class="row">
-        <header>
-            <img alt="Lorem ipsum dolor" src="images/bild-2.png">
-            <p>
-                wilkommen auf seite zwei
-            </p>
-        </header>
-    </div>
-    <hr>
-    <div class="row">
-        <nav>
-            <h2>
-                das ist die ueberschrift
-            </h2>
+        <div class="col-md-12">
             <div>
-                <a href="https://wiki.selfhtml.org/wiki/HTML/Elemente/nav">djuuuuuaaaaa hier gehts ab</a>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <img src="/images/logo-navbar.png" alt="" width="35" height="47"
+                            class="d-inline-block align-text-top">
+                        <a class="navbar-brand" href="#">&nbsp;&nbsp;MrNeissGuy</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/tables.html">Tables</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/formula.html">Formula</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/writingforms.html">Writing Forms</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/other-components.html">Other Components</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dropdown link
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
-        </nav>
-    </div>
-    <hr>
-    <div class="row">
-        <aside>
-            <h1>Quellenangabe</h1>
-            <a href="https://wiki.selfhtml.org/wiki/HTML/Elemente/nav">coole Seite "selfhtml"</a>
-        </aside>
-        <div>
-            <header>
-                <p>das ist seite 2
-            </header>
-            p>
-            </header>
-            <nav>
-                Lorem ipsum dolor sit
-            </nav>
-            <main>
-                <h1>das ist die ueberschrift des artikels</h1>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
-            </main>
-        </div>
-        <hr>
-        <div class="row">
-            <section>
-                <h2>das ist die ueberschrift von section</h2>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<br> nonumy eirmod tempor invidunt ut
-                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
-            </section>
-        </div>
-        <hr>
-        <div class="row">
-            <article>
-                <h2>das ist die ueberschrift des artikels von "article"</h2>
-                <section>
-                    <h2>Lorem ipsum dolor</h2>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
-                </section>
-            </article>
-        </div>
-        <hr>
-        <div class="row">
-            <footer>
-                <p id="footer">Lorem ipsum dolor sit amet, consetetur</p>
-            </footer>
-        </div>
-        <hr>
-        <div class="row">
-            <article>
-                <h1>das ist "address"</h1>
-                <p>Lorem ipsum dolor sit amet, consetetur</p>
-                <address>
-                    Autor: <a href="mailto:max.musterman@codeministry.de">Max Mustermann</a>
-                </address>
-            </article>
-            <footer>
-                <address>
-                    &copy; 1998-2013 SELFHTML <a href="https://selfhtml.org/impressum.html">Impressum</a> Software:
-                    Classic Forum 3.4
-                </address>
-            </footer>
-        </div>
-        <hr>
-        <div class="row">
-            <table>
-                <tr>
-                    <th>berlin</th>
-                    <th>koeln</th>
-                    <th>hamburg</th>
-                </tr>
-                <tr>
-                    <td>a</td>
-                    <td>b</td>
-                    <td>c</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    </td>
-                    <td>
-                </tr>
+            <div class="container">
+            <div>
+                <h1>
+                    Site 2
+                </h1>
+            </div>
+            <div class="row">
+                <header>
+                    <img alt="Lorem ipsum dolor" src="images/bild-2.png" height="200" weigth="200">
+                    <p>
+                        wilkommen auf seite zwei
+                    </p>
+                </header>
+            </div>
+            <hr>
+            <div class="row">
+                <nav>
+                    <h2>
+                        das ist die ueberschrift
+                    </h2>
+                    <div>
+                        <a href="https://wiki.selfhtml.org/wiki/HTML/Elemente/nav">djuuuuuaaaaa hier gehts ab</a>
+                    </div>
+                </nav>
+            </div>
+            <hr>
+            <div class="row">
+                <aside>
+                    <h1>Quellenangabe</h1>
+                    <a href="https://wiki.selfhtml.org/wiki/HTML/Elemente/nav">coole Seite "selfhtml"</a>
+                </aside>
+                <div>
+                    <header>
+                        <p>das ist seite 2
+                    </header>
+                    p>
+                    </header>
+                    <nav>
+                        Lorem ipsum dolor sit
+                    </nav>
+                    <main>
+                        <h1>das ist die ueberschrift des artikels</h1>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+                    </main>
+                </div>
+                <hr>
+                <div class="row">
+                    <section>
+                        <h2>das ist die ueberschrift von section</h2>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<br> nonumy eirmod tempor
+                            invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+                    </section>
+                </div>
+                <hr>
+                <div class="row">
+                    <article>
+                        <h2>das ist die ueberschrift des artikels von "article"</h2>
+                        <section>
+                            <h2>Lorem ipsum dolor</h2>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+                        </section>
+                    </article>
+                </div>
+                <hr>
+                <div class="row">
+                    <footer>
+                        <p id="footer">Lorem ipsum dolor sit amet, consetetur</p>
+                    </footer>
+                </div>
+                <hr>
+                <div class="row">
+                    <article>
+                        <h1>das ist "address"</h1>
+                        <p>Lorem ipsum dolor sit amet, consetetur</p>
+                        <address>
+                            Autor: <a href="mailto:max.musterman@codeministry.de">Max Mustermann</a>
+                        </address>
+                    </article>
+                    <footer>
+                        <address>
+                            &copy; 1998-2013 SELFHTML <a href="https://selfhtml.org/impressum.html">Impressum</a>
+                            Software:
+                            Classic Forum 3.4
+                        </address>
+                    </footer>
+                </div>
+                <hr>
+                <div class="row">
+                    <table>
+                        <tr>
+                            <th>berlin</th>
+                            <th>koeln</th>
+                            <th>hamburg</th>
+                        </tr>
+                        <tr>
+                            <td>a</td>
+                            <td>b</td>
+                            <td>c</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            </td>
+                            <td>
+                        </tr>
 
-            </table>
-        </div>
-        <hr>
-        <div class="row">
-            <table id="weather">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>hamburg</th>
-                        <th>berlin</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>montag</td>
-                        <td>30 grad</td>
-                        <td>27 grad</td>
-                    </tr>
-                    <tr>
-                        <td>dienstag</td>
-                        <td>28 grad</td>
-                        <td>25 grad</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td>wetter</td>
-                        <td>sonnig</td>
-                        <td>bew&oumllkt</td>
-                    </tr>
-                    <tr>
-                        <th colspan="3">Alle Angaben sind mega cool</th>
-                    </tr>
-                </tfoot>
-            </table>
-        </div>
-        <hr>
-        <div class="row">
-            <a href="index.html">Hier geht es zu site one</a>
-        </div>
-        <div class="row">
-            <a href="index3.html">Hier geht es zu site three</a>
-        </div>
-        <div class="row">
-            <a href="index3.html">Hier geht es zu site three</a>
-        </div>
-    </div>
+                    </table>
+                </div>
+                <hr>
+                <div class="row">
+                    <table id="weather">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>hamburg</th>
+                                <th>berlin</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>montag</td>
+                                <td>30 grad</td>
+                                <td>27 grad</td>
+                            </tr>
+                            <tr>
+                                <td>dienstag</td>
+                                <td>28 grad</td>
+                                <td>25 grad</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>wetter</td>
+                                <td>sonnig</td>
+                                <td>bew&oumllkt</td>
+                            </tr>
+                            <tr>
+                                <th colspan="3">Alle Angaben sind mega cool</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <hr>
+                <div class="row">
+                    <a href="index.html">Hier geht es zu site one</a>
+                </div>
+                <div class="row">
+                    <a href="index3.html">Hier geht es zu site three</a>
+                </div>
+                <div class="row">
+                    <a href="index3.html">Hier geht es zu site three</a>
+                </div>
+            </div>
+            </div>
+            <!-- Do not remove this-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="/js/app.js"></script>
 </body>
 
 </html>

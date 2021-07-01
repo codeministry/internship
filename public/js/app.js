@@ -13,16 +13,16 @@ var app = new Vue({
 var counter = new Vue({
     el: '#counter',
     data: {
-        number: 0
+        number: 0,
     },
     methods: {
         count: function (event) {
-            this.number = this.number + 1;
-
-            var counterModalElement = document.getElementById('counterModal');
-            var counterModal = new bootstrap.Modal(counterModalElement, {})
+            this.number += 1;
             
-            counterModal.toggle()
+            var counterModalElement = document.getElementById('counterModal');
+            var counterModal = new bootstrap.Modal(counterModalElement, {});
+                        
+            counterModal.show(number>5);
         }
     }
 })

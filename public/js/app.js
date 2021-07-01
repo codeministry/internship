@@ -21,8 +21,9 @@ var counter = new Vue({
             
             var counterModalElement = document.getElementById('counterModal');
             var counterModal = new bootstrap.Modal(counterModalElement, {});
-                        
-            counterModal.show(number>5);
+            if (this.number >=5) {
+              counterModal.show();
+            }          
         }
     }
 })

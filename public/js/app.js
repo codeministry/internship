@@ -19,14 +19,33 @@ var counter = new Vue({
         count: function (event) {
             this.number += 1;
 
+            console.log('number: ' + this.number);
+
             var counterModalElement = document.getElementById('counterModal');
             var counterModal = new bootstrap.Modal(counterModalElement, {});
-
-            if (this.number % 5 == 0) {
+            if (this.number >= 5) {
                 counterModal.show();
-            } else {
-                counterModal.hide();
             }
         }
     }
+})
+
+var app2 = new Vue({
+    el: '#app2',
+    data: {
+        product: "Socks",
+        image: "/images/greensock.png",
+        inStock: true,
+        details: ["80 cotto", "20 polyester", "Gender-neutral"]
+    }
+    variants: [
+        {
+            variantId: 2234,
+            variantColor: "green"
+        },
+        {
+            variantId: 2235,
+            variantColor: "blue"
+        }
+    ]
 })

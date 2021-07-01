@@ -1,12 +1,12 @@
 var app = new Vue({
     el: '#app',
     data: {
-      message: 'Hallo Welt!',
-      subheading: 'Und alle Interessent*innen',
-      introduction: 'Mit diesem Formular werden sie ein Teil der wilden Füchse Religion',
-      text1: 'Lorem Consequat fugiat elit voluptate consequat dolor consectetur magna consequat nisi ut labore',
-      text2: 'Lorem Consequat fugiat elit voluptate consequat dolor consectetur magna consequat nisi ut labore',
-      text3: 'Lorem Consequat fugiat elit voluptate consequat dolor consectetur magna consequat nisi ut labore',
+        message: 'Hallo Welt!',
+        subheading: 'Und alle Interessent*innen',
+        introduction: 'Mit diesem Formular werden sie ein Teil der wilden Füchse Religion',
+        text1: 'Lorem Consequat fugiat elit voluptate consequat dolor consectetur magna consequat nisi ut labore',
+        text2: 'Lorem Consequat fugiat elit voluptate consequat dolor consectetur magna consequat nisi ut labore',
+        text3: 'Lorem Consequat fugiat elit voluptate consequat dolor consectetur magna consequat nisi ut labore',
     }
 })
 
@@ -18,12 +18,15 @@ var counter = new Vue({
     methods: {
         count: function (event) {
             this.number += 1;
-            
+
             var counterModalElement = document.getElementById('counterModal');
             var counterModal = new bootstrap.Modal(counterModalElement, {});
-            if (this.number >=5) {
-              counterModal.show();
-            }          
+
+            if (this.number % 5 == 0) {
+                counterModal.show();
+            } else {
+                counterModal.hide();
+            }
         }
     }
 })

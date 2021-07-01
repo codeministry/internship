@@ -1,130 +1,189 @@
 <html lang="de">
 
 <head>
-    <script>
-        function showAlert() {
-            console.log("Hallo Welt!");
-        }
-    </script>
-    <link rel="stylesheet" href="css/styles.css">
-    <title>site one</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Do not remove this-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Bootstrap Test Page</title>
 </head>
 
 <body>
-    <div>
-        <div class="row">
-            <h1>
-                das <span>ist </span>die <span> seitenueberschrift</span>
-            </h1>
-            <h2>
-                das ist die unterueberschrift
-            </h2>
-            <h3>
-                das ist die unterunterueberschrift
-            </h3>
-            <h4>
-                das ist die unterunterunterueberschrift
-            </h4>
-            <h5>
-                das ist die unterunterunterunterueberschrift
-            </h5>
-            <h6>
-                das ist die unterunterunterunterunterueberschrift
-            </h6>
+    <div class="row">
+        <div class="col-md-12">
             <div>
-                <img class="size-200" alt="Montag" title="Montag" src="images/monday.png" onclick="showAlert();" />
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <img src="/images/logo-navbar.png" alt="" width="35" height="47"
+                            class="d-inline-block align-text-top">
+                        <a class="navbar-brand" href="#">&nbsp;&nbsp;MrNeissGuy</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/tables.html">Tables</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/formula.html">Formula</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/writingforms.html">Writing Forms</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/other-components.html">Other Components</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dropdown link
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
-            <p>
-                <b>Das Wetter ist besonders miserabel</b>
-            </p>
-            <img class="size-200" src="images/tuesday.png" />
-            <p>
-                <em><kbd>Das Wetter ist ausnahmsweise gut</kbd></em>
-            </p>
-            <img class="size-200" src="images/wednesday.png" />
-            <p>
-                <i><mark>Heute ist das Wetter wieder absolut nicht gut</mark></i>
-            </p>
-            <p>
-                <s>Lorem ipsum dolor sit amet, consetetur sadipscing</s>
-            </p>
-            <p>
-                <small>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                    ut
-                </small>
-            </p>
-            <p>
-                <strong>Lorem ipsum dolor sit amet, consetetur</strong>
-            </p>
-            <p>
-                H<sub>2</sub>O
-                <br>
-                2<sup>10</sup> = 1024
-            </p>
-            <p>
-                <u>Lorem ipsum dolor sit</u>
-            </p>
-            <p>
-                <cite></cite>
-            </p>
-            <p>
-                <q>Lorem ipsum dolor</q>
-            </p>
-            <p>
-                lorem ipsum<dfn>dolor sit</dfn>conseteteur
-            </p>
-            <p>
-                <abbr title="super cool">spc</abbr>
-                <br> super cool
-            </p>
-            <p>
-            <h2>das ist die unterueberschrift</h2>
-            </p>
-            <p>
-                <code>das hier ist der code</code>
-            </p>
-            <video class="size-400" src="videos/demofilm.mp4" controls></video>
-            <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            </p>
-            <blockquote>
-                <p>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                    et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                </p>
-            </blockquote>
-            <ol>
-                <li>Lorem ipsum dolor sit amet,</li>
-                <li>Lorem ipsum dolor sit amet, consetetur</li>
-                <li>Lorem ipsum dolor sit</li>
-            </ol>
-            <ul>
-                <li>Lorem ipsum dolor sit amet, consetetur</li>
-                <li>Lorem ipsum dolor sit amet,</li>
-                <li>Lorem ipsum dolor sit</li>
-            </ul>
-            <p>
-                Lorem ipsum dolor sit
-            </p>
-            <hr>
-            <p>
-                Lorem ipsum dolor sit amet, consetetur
-            </p>
-        </div>
-        <div class="row">
-            <a href="https://wiki.selfhtml.org/wiki/HTML/Elemente/a" target="_blank">Hier geht's zu selfhtml</a>
-        </div>
-        <div class="row">
-            <a href="index2.html">Hier geht es zu site two</a>
-        </div>
-        <div class="row">
-            <a href="index3.html">Hier geht es zu site three</a>
-        </div>
-        <div class="row">
-            <img class="size-200" alt="Montag" title="Montag" src="images/monday.png" onclick="showAlert();" />
-        </div>
-    </div>
+            <div>
+                <div class="container">
+                <div class="row">
+                    <h1>
+                        das <span>ist </span>die <span> seitenueberschrift</span>
+                    </h1>
+                    <h2>
+                        das ist die unterueberschrift
+                    </h2>
+                    <h3>
+                        das ist die unterunterueberschrift
+                    </h3>
+                    <h4>
+                        das ist die unterunterunterueberschrift
+                    </h4>
+                    <h5>
+                        das ist die unterunterunterunterueberschrift
+                    </h5>
+                    <h6>
+                        das ist die unterunterunterunterunterueberschrift
+                    </h6>
+                    <div>
+                        <img class="size-200" alt="Montag" title="Montag" src="images/monday.png"
+                            onclick="showAlert();" />
+                    </div>
+                    <p>
+                        <b>Das Wetter ist besonders miserabel</b>
+                    </p>
+                    <img class="size-200" src="images/tuesday.png" />
+                    <p>
+                        <em><kbd>Das Wetter ist ausnahmsweise gut</kbd></em>
+                    </p>
+                    <img class="size-200" src="images/wednesday.png" />
+                    <p>
+                        <i><mark>Heute ist das Wetter wieder absolut nicht gut</mark></i>
+                    </p>
+                    <p>
+                        <s>Lorem ipsum dolor sit amet, consetetur sadipscing</s>
+                    </p>
+                    <p>
+                        <small>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt
+                            ut
+                        </small>
+                    </p>
+                    <p>
+                        <strong>Lorem ipsum dolor sit amet, consetetur</strong>
+                    </p>
+                    <p>
+                        H<sub>2</sub>O
+                        <br>
+                        2<sup>10</sup> = 1024
+                    </p>
+                    <p>
+                        <u>Lorem ipsum dolor sit</u>
+                    </p>
+                    <p>
+                        <cite></cite>
+                    </p>
+                    <p>
+                        <q>Lorem ipsum dolor</q>
+                    </p>
+                    <p>
+                        lorem ipsum<dfn>dolor sit</dfn>conseteteur
+                    </p>
+                    <p>
+                        <abbr title="super cool">spc</abbr>
+                        <br> super cool
+                    </p>
+                    <p>
+                    <h2>das ist die unterueberschrift</h2>
+                    </p>
+                    <p>
+                        <code>das hier ist der code</code>
+                    </p>
+                    <video class="size-400" src="videos/demofilm.mp4" controls></video>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                    </p>
+                    <blockquote>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                            dolores
+                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet.
+                        </p>
+                    </blockquote>
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet,</li>
+                        <li>Lorem ipsum dolor sit amet, consetetur</li>
+                        <li>Lorem ipsum dolor sit</li>
+                    </ol>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consetetur</li>
+                        <li>Lorem ipsum dolor sit amet,</li>
+                        <li>Lorem ipsum dolor sit</li>
+                    </ul>
+                    <p>
+                        Lorem ipsum dolor sit
+                    </p>
+                    <hr>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur
+                    </p>
+                </div>
+                <div class="row">
+                    <a href="https://wiki.selfhtml.org/wiki/HTML/Elemente/a" target="_blank">Hier geht's zu selfhtml</a>
+                </div>
+                <div class="row">
+                    <a href="index2.html">Hier geht es zu site two</a>
+                </div>
+                <div class="row">
+                    <a href="index3.html">Hier geht es zu site three</a>
+                </div>
+                <div class="row">
+                    <img class="size-200" alt="Montag" title="Montag" src="images/monday.png" onclick="showAlert();" />
+                </div>
+            </div>
+            </div>
+            <!-- Do not remove this-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="/js/app.js"></script>
 </body>
 
 </html>

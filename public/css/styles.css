@@ -1,7 +1,6 @@
 html, body {
     font-family:Helvetica, sans-serif;
     margin: 20px;
-
 }
 
 table#weather td:first-child {
@@ -14,5 +13,5 @@ table#weather td:first-child {
 
 .size-200 {
     width: 200px;
-    border: 1px solid #EEEEEE;
+    border: 1px solid #ffffff;
 }
